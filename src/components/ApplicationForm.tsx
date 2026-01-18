@@ -289,21 +289,6 @@ export function ApplicationForm() {
                 )}
               </div>
 
-              <div>
-                <label className="block text-cyan-400 font-medium mb-2">
-                  Ko'cha va uy raqami *
-                </label>
-                <input
-                  type="text"
-                  value={formData.address}
-                  onChange={(e) => handleChange('address', e.target.value)}
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
-                  placeholder="Ko'cha va uy raqami"
-                />
-                {errors.address && (
-                  <p className="text-red-400 text-sm mt-1">{errors.address}</p>
-                )}
-              </div>
             </div>
           </motion.div>
 
